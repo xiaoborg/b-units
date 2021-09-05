@@ -2,7 +2,11 @@
   "name": "b-units",
   "version": "1.0.0",
   "author": "borg",
-  "description": "A custom npm package base template",
+  "description": "Some commonly used tool functions",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoborg/b-units"
+  },
   "main": "dist/js/index.js",
   "module": "src/js/index.js",
   "scripts": {
