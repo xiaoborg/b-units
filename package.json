@@ -1,9 +1,9 @@
 {
   "name": "b-units",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "borg",
   "description": "Some commonly used tool functions",
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/xiaoborg/b-units"
   },
