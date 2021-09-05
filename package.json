@@ -1,0 +1,41 @@
+{
+  "name": "b-units",
+  "version": "1.0.0",
+  "author": "borg",
+  "description": "A custom npm package base template",
+  "main": "dist/js/index.js",
+  "module": "src/js/index.js",
+  "scripts": {
+    "build": "gulp --production",
+    "start": "gulp"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/runtime": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-beautify": "^3.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-header": "^2.0.9",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "js-yaml": "^4.1.0",
+    "sass": "^1.38.1",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^17.1.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

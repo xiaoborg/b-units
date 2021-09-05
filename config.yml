@@ -1,0 +1,26 @@
+# Your project's server will run on localhost:xxxx at this port
+port: 8000
+
+compatibility:
+  - 'last 2 versions'
+  - 'ie >= 9'
+  - 'ios >= 7'
+# Gulp will reference these paths when it copies files
+pathConfig:
+  js:
+    in:
+      - 'src/js/*.js'
+    out:
+      - 'dist/js'
+  html:
+    in:
+      - 'src/html/*.html'
+      - 'src/html/**/*.html'
+    out:
+      - 'dist/html'
+  scss:
+    in:
+      - 'src/styles/*.scss'
+      - 'src/styles/**/*.scss'
+    out:
+      - 'dist/html'
