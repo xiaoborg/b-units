@@ -10,7 +10,7 @@
   "main": "dist/js/index.js",
   "module": "src/js/index.js",
   "scripts": {
-    "build": "gulp --production",
+    "build": "gulp build --production",
     "start": "gulp"
   },
   "license": "ISC",

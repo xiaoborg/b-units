@@ -1,12 +1,14 @@
-import _Year from './year'
-
 function isBigMonth(_month) {
   return !([1, 3, 5, 7, 8, 10, 12].findIndex(n => n === _month) === -1)
 }
-
+function isLeapYear(_year) {
+  const _remainder1 = _year % 400
+  const _remainder2 = _year % 4
+  return _remainder1 === 0 || _remainder2 === 0
+}
 function getMonthMaxCount(_year, _month) {
   let _maxCount
-  const _isLeapYear = _Year.isLeapYear(_year)
+  const _isLeapYear = isLeapYear(_year)
   const _isBigMonth = isBigMonth(_month)
   const _isFebruary = _month === 2
 
