@@ -25,7 +25,7 @@ pipelines:
           script:
             - npm run build
       - step:
-          name: Deploy to Production
+          name: Deploy to NPM
           deployment: Production
           script:
             # Bump versions before publishing
