@@ -12,21 +12,16 @@ image: node:16
 pipelines:
   branches:
     master:
-      - parallel:
-          - step:
-              name: modules
-              script:
-                - npm install
-          - step:
-              name: Security Scan
-              script:
-                # Run a security scan for sensitive data.
-                # See more security tools at https://bitbucket.org/product/features/pipelines/integrations?&category=security
-                - pipe: atlassian/git-secrets-scan:0.5.1
-          - step:
-              name: build
-              script:
-                - npm run build
+      - step:
+          name: modules
+          caches:
+            - node
+          script:
+            - npm install
+      - step:
+          name: build
+          script:
+            - npm run build
       - step:
           name: Deploy to Production
           deployment: Production
