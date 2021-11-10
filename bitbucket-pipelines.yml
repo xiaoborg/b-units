@@ -15,8 +15,6 @@ pipelines:
       - parallel:
           - step:
               name: modules
-              caches:
-                - node
               script:
                 - npm install
           - step:
