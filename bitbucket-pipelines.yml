@@ -20,6 +20,8 @@ pipelines:
             - npm install
       - step:
           name: build
+          caches:
+            - node
           script:
             - npm run build
       - step:
