@@ -9,8 +9,8 @@ module.exports = {
     path: path.resolve('dist'),
     filename: '[name].js',
     library: {
-      type: 'umd',
-      name: require('../package.config.json').name,
+      type: 'umd', // The way the library is exposed
+      name: require('../package.config.json').name, // customize
       export: 'default'
     },
     globalObject: 'this',
